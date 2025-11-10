@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>天启明 · 头皮抗衰管理科技公司</title>
-  <meta name="description" content="天启明是一家AI科技驱动的新兴日化消费品公司，以头皮抗衰管理为核心，通过AI筛选新型多肽与小分子研发功能性护发产品，提供科学且个性化的脱发与头皮抗衰解决方案。" />
-  <meta name="keywords" content="天启明, 头皮抗衰, 护发, 脱发, AI科技, 日化, 功能性护发, 多肽, 小分子" />
+  <title>天启明 · AI驱动的头皮抗衰管理科技公司</title>
+  <meta name="description" content="天启明是一家AI科技驱动的新兴日化消费品公司，以头皮抗衰管理为核心，通过AI筛选新型多肽与小分子研发功能性护发产品，提供科学且个性化的脱发与头皮抗衰解决方案。">
   <style>
     :root {
       --bg: #0f172a;
@@ -16,17 +15,18 @@
       --text-sub: #9ca3af;
       --border-soft: rgba(148,163,253,0.18);
       --radius-xl: 18px;
-      --max-width: 1120px;
-      --font-cn: -apple-system, BlinkMacSystemFont, system-ui, -system-ui,
-                 "SF Pro SC", "PingFang SC", "Helvetica Neue", sans-serif;
+      --max-width: 1140px;
+      --font-cn: 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: var(--font-cn);
       background: radial-gradient(circle at top, #111827 0, #020817 42%, #000 100%);
       color: var(--text-main);
+      padding: 40px 18px 60px;
+      font-size: 20px;
+      line-height: 1.9;
       -webkit-font-smoothing: antialiased;
-      padding: 32px 16px 40px;
     }
     .wrap {
       max-width: var(--max-width);
@@ -36,8 +36,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 32px;
-      gap: 16px;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
     }
     .brand {
       display: flex;
@@ -45,161 +45,101 @@
       gap: 10px;
     }
     .brand-logo {
-      width: 34px;
-      height: 34px;
-      border-radius: 10px;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
       background: radial-gradient(circle at 30% 0, #38bdf8, #4f46e5);
       box-shadow: 0 8px 24px rgba(56,189,248,0.35);
     }
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
     .brand-text span:first-child {
-      font-size: 17px;
+      font-size: 22px;
       font-weight: 600;
-      letter-spacing: 0.06em;
     }
     .brand-text span:last-child {
-      font-size: 11px;
+      font-size: 13px;
       color: var(--text-sub);
     }
     .header-right {
       text-align: right;
-      font-size: 11px;
+      font-size: 13px;
       color: var(--text-sub);
-      line-height: 1.5;
     }
     .tag {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 5px 9px;
+      gap: 8px;
+      padding: 8px 14px;
       border-radius: 999px;
       border: 1px solid var(--accent-soft);
       background: rgba(15,23,42,0.8);
-      font-size: 10px;
       color: var(--accent);
-      margin-bottom: 14px;
-    }
-    .tag-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 999px;
-      background: var(--accent);
+      font-size: 14px;
+      margin-bottom: 18px;
     }
     .hero-title {
-      font-size: 26px;
-      font-weight: 600;
-      line-height: 1.35;
-      margin-bottom: 10px;
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.4;
     }
     .hero-subtitle {
-      font-size: 13px;
+      font-size: 20px;
       color: var(--text-sub);
-      max-width: 620px;
-      line-height: 1.7;
-      margin-bottom: 24px;
+      margin-bottom: 36px;
+      line-height: 1.9;
     }
-    .hero-highlight {
-      color: var(--accent);
-      font-weight: 500;
-    }
+    .hero-highlight { color: var(--accent); }
     .grid {
       display: grid;
-      grid-template-columns: 2.1fr 1.4fr;
-      gap: 16px;
-      margin-bottom: 22px;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 24px;
+      margin-bottom: 32px;
     }
     .card {
-      background: radial-gradient(circle at top left, rgba(56,189,248,0.04), transparent),
-                  var(--card-bg);
-      border-radius: var(--radius-xl);
+      background: radial-gradient(circle at top left, rgba(56,189,248,0.04), transparent), var(--card-bg);
       border: 1px solid var(--border-soft);
-      padding: 16px 15px 14px;
-      backdrop-filter: blur(16px);
+      border-radius: var(--radius-xl);
+      padding: 24px;
     }
     .card h2 {
-      font-size: 14px;
-      margin-bottom: 8px;
-      font-weight: 500;
-      color: #e5e7ff;
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 12px;
     }
-    .card p {
-      font-size: 12px;
+    .card p, .card li {
+      font-size: 18px;
       color: var(--text-sub);
-      line-height: 1.8;
-      margin-bottom: 4px;
+      margin-bottom: 10px;
     }
-    .list {
-      list-style: none;
-      margin-top: 4px;
-    }
-    .list li {
-      font-size: 12px;
-      color: var(--text-sub);
-      margin-bottom: 2px;
-      display: flex;
-      gap: 6px;
-    }
-    .list li::before {
-      content: "•";
-      color: var(--accent);
-      margin-top: 2px;
-    }
-    .tagline-en {
-      font-size: 10px;
-      color: var(--accent);
-      margin-top: 2px;
-    }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 4px 8px;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      font-size: 9px;
-      margin-top: 4px;
-    }
-    .contact {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      font-size: 10px;
-      color: var(--text-sub);
-      margin-top: 6px;
-    }
-    .contact strong {
-      color: var(--text-main);
-      font-weight: 500;
-    }
+    .list { list-style: disc; padding-left: 22px; }
     footer {
-      margin-top: 8px;
-      font-size: 9px;
-      color: #6b7280;
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      flex-wrap: wrap;
-      opacity: 0.9;
-    }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      border-top: 1px solid #1f2937;
+      margin-top: 40px;
+      padding-top: 20px;
+      font-size: 16px;
+      color: #9ca3af;
+      text-align: center;
     }
     @media (max-width: 768px) {
-      body { padding: 24px 14px 28px; }
+      body { font-size: 18px; padding: 24px; }
       .grid { grid-template-columns: 1fr; }
-      .hero-title { font-size: 22px; }
-      .hero-subtitle { font-size: 12px; }
-      header { flex-direction: column; align-items: flex-start; }
-      .header-right { text-align: left; }
+      .hero-title { font-size: 28px; }
+      .hero-subtitle { font-size: 17px; }
+    }
+    .en-section {
+      margin-top: 40px;
+      border-top: 1px solid #1e293b;
+      padding-top: 40px;
+    }
+    .en-section h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+      color: #fff;
+    }
+    .en-section p {
+      font-size: 18px;
+      color: var(--text-sub);
+      line-height: 1.8;
     }
   </style>
 </head>
@@ -220,99 +160,58 @@
     </header>
 
     <main>
-      <div class="tag">
-        <div class="tag-dot"></div>
-        AI驱动的功能性护发与头皮抗衰解决方案
-      </div>
+      <div class="tag">AI驱动的功能性护发与头皮抗衰解决方案</div>
 
-      <h1 class="hero-title">
-        以 AI 科技重构头皮抗衰管理，打造新一代功能性日化品牌
-      </h1>
-      <p class="hero-subtitle">
-        天启明科技是一家<span class="hero-highlight">AI科技驱动的新兴日化消费品公司</span>，以“头皮抗衰管理”为核心切入点，
-        聚焦当前消费者广泛关注的脱发及头皮亚健康问题。公司基于自研 AI 平台筛选
-        <span class="hero-highlight">新型多肽与小分子</span>，开发更具科学性与个性化的功能性护发与抗衰产品，
-        为用户提供兼具安全性、有效性与使用体验的长期护理解决方案。
-      </p>
+      <h1 class="hero-title">以 AI 科技重构头皮抗衰管理，打造新一代功能性日化品牌</h1>
+      <p class="hero-subtitle">天启明科技是一家<span class="hero-highlight">AI科技驱动的新兴日化消费品公司</span>，以“头皮抗衰管理”为核心切入点，聚焦当前消费者广泛关注的脱发及头皮亚健康问题。公司基于自研 AI 平台筛选<span class="hero-highlight">新型多肽与小分子</span>，开发更具科学性与个性化的功能性护发与抗衰产品，为用户提供兼具安全性、有效性与使用体验的长期护理解决方案。</p>
 
       <section class="grid">
         <div class="card">
           <h2>我们的定位与技术优势</h2>
-          <p>
-            通过 AI 算法与大数据筛选功效活性成分，结合皮肤科学与毛囊生物学研究，
-            搭建以多肽、小分子与复配体系为核心的头皮抗衰产品管线。
-          </p>
+          <p>通过 AI 算法与大数据筛选功效活性成分，结合皮肤科学与毛囊生物学研究，搭建以多肽、小分子与复配体系为核心的头皮抗衰产品管线。</p>
           <ul class="list">
             <li>聚焦脱发、头皮屏障受损、头皮老化等核心痛点场景</li>
             <li>建立「成分筛选 → 配方验证 → 用户反馈 → 持续迭代」的闭环体系</li>
             <li>以循证数据支撑功效表达与产品升级</li>
           </ul>
-          <p class="tagline-en">AI-empowered scalp longevity & functional haircare.</p>
         </div>
 
         <div class="card">
           <h2>集团背景与资本支持</h2>
-          <p>
-            公司为外商独资企业，其最终控股方为
-            <span class="hero-highlight">冠轢控股有限公司（港股上市公司，股票代码 1872）</span>，
-            为上市公司全资控股孙公司。
-          </p>
-          <p>
-            依托集团在资本、供应链、渠道与国际化运营上的资源优势，
-            天启明科技具备长期投入研发与品牌建设的稳健基础。
-          </p>
-          <div class="badge">
-            <span>上市公司体系</span> ·
-            <span>长期主义研发投入</span>
-          </div>
+          <p>公司为外商独资企业，其最终控股方为<strong>冠轢控股有限公司（港股上市公司，股票代码 1872）</strong>，为上市公司全资控股孙公司。依托集团在资本、供应链、渠道与国际化运营上的资源优势，天启明科技具备长期投入研发与品牌建设的稳健基础。</p>
         </div>
       </section>
 
       <section class="grid">
         <div class="card">
           <h2>业务布局与发展规划</h2>
-          <p>
-            天启明科技将整合线上平台与线下渠道，构建覆盖
-            <span class="hero-highlight">研发、品牌、运营、专业服务、用户运营</span>
-            在内的全链路体系，形成以「科学功效 + AI能力 + 体验服务」为核心的护发与头皮管理品牌矩阵。
-          </p>
+          <p>天启明科技将整合线上平台与线下渠道，构建覆盖<span class="hero-highlight">研发、品牌、运营、专业服务、用户运营</span>在内的全链路体系，形成以「科学功效 + AI能力 + 体验服务」为核心的护发与头皮管理品牌矩阵。</p>
           <ul class="list">
             <li>功能性头皮与护发产品线持续拓展</li>
             <li>联合医研机构与专家，强化专业背书</li>
-            <li>计划在设立首年冲刺数亿元人民币销售规模</li>
           </ul>
         </div>
 
         <div class="card">
           <h2>联系与合规信息</h2>
           <p>如需商务合作、渠道洽谈或媒体沟通，欢迎通过以下方式联系：</p>
-          <div class="contact">
-            <div>
-              <strong>企业邮箱：</strong>
-              <a href="mailto:contact@tianqimingsz.cn">contact@tianqimingsz.cn</a>
-            </div>
-            <div>
-              <strong>公司地址：</strong> 深圳市前海深港合作区南山街道兴海大道3044号信利康大厦8C-09H 
-            </div>
-            <div>
-              <strong>法律主体：</strong> 深圳天启明科技有限公司 
-            </div>
-          </div>
-          <p style="margin-top:6px;font-size:9px;color:var(--text-sub);">
-            本网站用于展示天启明科技品牌及业务信息，相关信息可供合作伙伴与监管机构核验。
-          </p>
+          <p><strong>企业邮箱：</strong><a href="mailto:contact@tianqimingsz.cn">contact@tianqimingsz.cn</a></p>
+          <p><strong>公司地址：</strong> 深圳市前海深港合作区南山街道兴海大道3044号信利康大厦8C-09H</p>
+          <p><strong>法律主体：</strong> 深圳天启明科技有限公司</p>
         </div>
+      </section>
+
+      <section class="en-section">
+        <h2>About Tianqiming Technology (English Version)</h2>
+        <p>Tianqiming Technology Co., Ltd. is an AI-driven emerging consumer goods company focused on <strong>scalp anti-aging management</strong>. By leveraging artificial intelligence to screen innovative peptides and small molecules, the company develops functional haircare products that provide scientific, personalized, and long-term scalp and hair health solutions.</p>
+        <p>As a wholly foreign-owned subsidiary under <strong>Crown Laboratories Holdings Limited (HKEX:1872)</strong>, Tianqiming integrates advanced research, brand innovation, and intelligent operations to reshape the future of scalp care through technology and science.</p>
+        <p>We are dedicated to building a full-chain ecosystem that combines R&D, brand, operations, and user experience, striving to become a leading global brand in AI-powered scalp health and functional haircare.</p>
       </section>
     </main>
 
     <footer>
-      <div>
-        © 2025 深圳天启明科技有限公司 保留所有权利
-      </div>
-      <div>
-        域名：tianqimingsz.cn
-        <!-- 如需，可在此处添加备案号 -->
-      </div>
+      <p>© 2025 深圳天启明科技有限公司 | Tianqiming Technology Co., Ltd. All Rights Reserved.</p>
+      <p>域名：tianqimingsz.cn</p>
     </footer>
   </div>
 </body>
